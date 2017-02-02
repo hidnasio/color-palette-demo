@@ -1,0 +1,12 @@
+<nav class="color-palette-demo__nav">
+  <a {{action 'navigateTo' navigation.palette}} class="color-palette-demo__logo">
+    Color Palette
+  </a>
+  <a {{action 'navigateTo' navigation.new}} class="color-palette-demo__new">
+    &oplus;
+  </a>
+</nav>
+
+<section class="color-palette-demo__content">
+  {{component currentComponent}}
+</section>
