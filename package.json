@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Color palette demo app",
   "keywords": [
+    "ember-addon",
     "demo ember app"
   ],
   "license": "MIT",
