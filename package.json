@@ -1,6 +1,6 @@
 {
   "name": "color-palette-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Color palette demo app",
   "keywords": [
     "ember-addon",
