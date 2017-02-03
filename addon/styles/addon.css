@@ -1,8 +1,44 @@
+:root {
+  --base-size: 16;
+
+  --color-background: #3e464c;
+  --color-foreground: #ffd54f;
+
+  --size: calc(1rem / var(--base-size));
+
+  --size-full: 100%;
+  --size-gutter: calc(10 * var(--size));
+  --size-navbar: calc(60 * var(--size));
+  --size-sidebar: calc(250 * var(--size));
+  --size-content: calc(100% - var(--size-sidebar));
+
+  --size-font: calc(20 * var(--size));
+  --size-font-small: calc(16 * var(--size));
+  --size-font-big: calc(60 * var(--size));
+}
+
+* {
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  background: #363f45;
 }
+
+html {
+  line-height: 1.2;
+}
+
 
 .color-palette-demo {
   font-family: sans-serif;
@@ -78,4 +114,67 @@ body {
 
 .color-detail--light {
   color: #f7f7f7;
+}
+
+.color-form {
+  padding: calc(16 * var(--size));
+  background: #363f45;
+  color: white;
+  border-top: var(--size) solid #333;
+  font-size: var(--size-font);
+}
+
+.color-form__control {
+  appearance: none;
+  background-color: white;
+  border-radius: calc(2 * var(--size));
+  border: var(--size) solid white;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: calc(45 * var(--size));
+  padding: calc(10 * var(--size));
+  display: block;
+  width: 100%;
+}
+
+.color-form__control:focus {
+  border-color: #333;
+  outline: 0;
+}
+
+.color-form__control--textarea {
+  resize: none;
+  min-height: calc(80 * var(--size));
+}
+
+.color-form__field-name {
+  display: block;
+  margin-top: calc(20 * var(--size));
+  margin-bottom: calc(10 * var(--size));
+}
+
+.color-form__field-name:first-child {
+  margin-top: calc(10 * var(--size));
+}
+
+.color-form__button {
+  display: block;
+  width: 100%;
+  height: calc(45 * var(--size));
+  border-radius: calc(2 * var(--size));
+  box-shadow: none;
+  border: none;
+  margin-top: ;
+  font-family: inherit;
+  margin-top: calc(20 * var(--size));
+}
+
+.color-form__button:hover {
+  background-color: #aaa;
+}
+
+.color-form__error {
+  font-size: var(--size-font-small);
+  margin-top: calc(10 * var(--size));
+  color: #f34235;
 }

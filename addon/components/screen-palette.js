@@ -9,7 +9,7 @@ export default Ember.Component.extend({
 
   repository: inject.service(),
 
-  colors: computed(function() {
+  colors: computed('repository.colors.[]', function() {
     return this.get('repository').all();
   })
 });

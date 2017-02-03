@@ -14,7 +14,7 @@ export default Ember.Service.extend({
   },
 
   add(color) {
-    this.get('colors').pushObject(color);
+    this.get('colors').unshiftObject(color);
   },
 
   delete(color) {
